@@ -1,6 +1,14 @@
-@import 'base/functions';
-@import 'base/mixins';
 @import 'custom';
 @import 'bootstrap';
-@import 'base/font-size';
-@import 'base/common';
+@import "normalize";
+
+@import "_partials/base/variables";
+@import "_partials/base/base";
+@import "_partials/base/buttons";
+@import "_partials/base/hover";
+
+@import "_partials/layout/header";
+@import "_partials/layout/footer";
+
+@import "_partials/strates/strate_actu";
+@import "_partials/strates/strate_article";

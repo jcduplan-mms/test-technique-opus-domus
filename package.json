@@ -12,13 +12,13 @@
     "build": "gulp build"
   },
   "devDependencies": {
-    "@babel/cli": "^7.7.4",
-    "@babel/core": "^7.7.4",
-    "@babel/preset-env": "^7.7.4",
+    "@babel/cli": "^7.12.10",
+    "@babel/core": "^7.12.10",
+    "@babel/preset-env": "^7.12.11",
     "babelify": "^10.0.0",
-    "bootstrap": "^4.4.1",
-    "browser-sync": "^2.26.7",
-    "browserify": "^16.5.0",
+    "bootstrap": "^4.6.0",
+    "browser-sync": "^2.26.13",
+    "browserify": "^16.5.2",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^5.0.0",
     "gulp-buffer": "0.0.2",
@@ -30,5 +30,10 @@
     "gulp-uglify": "^3.0.2",
     "node-notifier": "^5.4.3",
     "prettier": "^1.19.1"
+  },
+  "dependencies": {
+    "@glidejs/glide": "^3.4.1",
+    "swipejs": "^2.3.0",
+    "swiper": "^6.4.7"
   }
 }

@@ -1,0 +1,124 @@
+// STRATE ARTICLE
+
+.bg-grey {
+  background-color: $grey;
+}
+
+.strate-article {
+  position: relative;
+
+  .row {
+    .image-article {
+      position: -webkit-sticky;
+      position: sticky;
+      top: 0;
+      width: 580px;
+      height: 100vh;
+      margin-bottom: 130px;
+
+      > img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    .content-article {
+      padding: 180px 0 130px 140px;
+
+      .on-title {
+        text-transform: uppercase;
+        margin-bottom: 20px;
+        font-size: 18px;
+        font-family: $conqueror-text-regular;
+      }
+
+      .title {
+        position: relative;
+        font-family: $whyte-book;
+        font-size: 65px;
+        line-height: 1;
+        margin-bottom: 60px;
+        left: -4px;
+
+        &.with_line {
+          &:after {
+            content: '';
+            position: absolute;
+            left: 270px;
+            bottom: 40px;
+            height: 2px;
+            width: 100px;
+            background-color: $black;
+          }
+        }
+      }
+
+      .content {
+        position: relative;
+
+        > h3 {
+          display: flex;
+          flex-direction: column;
+          font-size: 18px;
+          font-family: $conqueror-text-regular;
+          margin-top: 60px;
+          margin-bottom: 50px;
+
+          &:first-child {
+            margin-top: 0;
+          }
+
+          > span {
+            position: relative;
+
+            & + span {
+              margin-left: 60px;
+              margin-top: 6px;
+            }
+          }
+        }
+
+        > p {
+          margin-bottom: 30px;
+          padding-left: 60px;
+
+          &:last-child {
+            margin-bottom: 0;
+          }
+
+          a {
+            color: #C7ABD1;
+            text-decoration: underline;
+          }
+        }
+
+        > ul {
+          padding-left: 70px;
+          margin-bottom: 30px;
+
+          > li {
+            position: relative;
+            padding-left: 25px;
+            margin-bottom: 5px;
+
+            &:last-child {
+              margin-bottom: 0;
+            }
+
+            &:before {
+              content: '';
+              position: absolute;
+              left: 0;
+              top: 7px;
+              width: 6px;
+              height: 6px;
+              background-color: $black;
+              border-radius: 50%;
+            }
+          }
+        }
+      }
+    }
+  }
+}

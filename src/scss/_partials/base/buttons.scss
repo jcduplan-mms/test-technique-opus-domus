@@ -1,0 +1,46 @@
+// BUTTONS
+
+a, button, input {
+  text-decoration: none;
+  position: relative;
+  padding: 0;
+  color: $white;
+
+  &.cta {
+    border: 0;
+    font-family: $whyte-book;
+    background-color: transparent;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 17px;
+    z-index: 0;
+    transition: $transition_standard;
+    text-align: center;
+
+    > .text {
+      color: $white;
+    }
+
+    @include max($bp_extra_small) {
+      width: 100%;
+    }
+
+    &.cta-full {
+      padding: 15px 20px 13px;
+    }
+
+    &.cta-inline {
+      &.cta-with-icon {
+        > .icon {
+          position: relative;
+          margin-right: 10px;
+        }
+      }
+
+      > .text {
+        color: $black;
+      }
+    }
+  }
+}

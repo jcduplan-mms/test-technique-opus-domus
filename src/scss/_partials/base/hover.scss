@@ -1,0 +1,46 @@
+// TRANSITIONS CONFIG
+
+.strate-article .row .content-article .content > p a,
+.cta,
+.cta .text,
+.cta .icon svg path {
+  transition: $transition_standard;
+}
+
+.cta .icon,
+.strate-actu .slider-actu .splide__track ul.splide__list li.splide__slide a.box-actu > .image > img {
+  transition: $transition_smooth_slowly;
+}
+
+
+//ANIMATIONS
+
+.strate-article .row .content-article .content > p a {
+  &:hover {
+    color: $black;
+  }
+}
+
+.cta.cta-inline.cta-with-icon {
+  &:hover {
+    > .text {
+      color: $blue;
+    }
+
+    > .icon {
+      transform: translateX(5px);
+
+      svg path {
+        fill: $blue;
+      }
+    }
+  }
+}
+
+.strate-actu .slider-actu .splide__track ul.splide__list li.splide__slide a.box-actu {
+  &:hover {
+    > .image > img {
+      transform: scale(1.15);
+    }
+  }
+}

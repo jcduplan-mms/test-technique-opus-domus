@@ -1,0 +1,102 @@
+// PATHS
+$pathToJPG: "../../assets/img/jpg/";
+$pathToPNG: "../../assets/img/png/";
+$pathToSVG: "../../assets/img/svg/";
+$pathToICONS: "../../assets/img/icons/";
+$pathToFONTS: "../../../../assets/fonts/";
+
+// FONTS
+@font-face {
+  font-family: 'Whyte Book';
+  src: url($pathToFONTS + 'Whyte-Book.eot'),
+  url($pathToFONTS + 'Whyte-Book.eot?#iefix') format('embedded-opentype'),
+  url($pathToFONTS + 'Whyte-Book.woff2') format('woff2'),
+  url($pathToFONTS + 'Whyte-Book.woff') format('woff'),
+  url($pathToFONTS + 'Whyte-Book.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Whyte';
+  src: url($pathToFONTS + 'Whyte-Regular.eot'),
+  url($pathToFONTS + 'Whyte-Regular.eot?#iefix') format('embedded-opentype'),
+  url($pathToFONTS + 'Whyte-Regular.woff2') format('woff2'),
+  url($pathToFONTS + 'Whyte-Regular.woff') format('woff'),
+  url($pathToFONTS + 'Whyte-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Whyte';
+  src: url($pathToFONTS + 'Whyte-Medium.eot'),
+  url($pathToFONTS + 'Whyte-Medium.eot?#iefix') format('embedded-opentype'),
+  url($pathToFONTS + 'Whyte-Medium.woff2') format('woff2'),
+  url($pathToFONTS + 'Whyte-Medium.woff') format('woff'),
+  url($pathToFONTS + 'Whyte-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'conqueror_textregular';
+  src: url($pathToFONTS + 'conquerortext-regular-webfont.woff2') format('woff2'),
+  url($pathToFONTS + 'conquerortext-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+$whyte-book: 'Whyte Book', sans-serif;
+$whyte-medium: 'Whyte', sans-serif;
+$whyte-regular: 'Whyte', sans-serif;
+$conqueror-text-regular: 'conqueror_textregular', sans-serif;
+
+// COLORS
+$white: #fff;
+$black: #000;
+
+$grey: #EDEDED;
+$blue: #4F6ECC;
+
+//TRANSITIONS
+$transition_standard: all 225ms cubic-bezier(0.165, 0.840, 0.440, 1.000);
+$transition_smooth_speed: all 350ms ease-in-out;
+$transition_smooth: all 600ms ease-in-out;
+$transition_smooth_slowly: all 800ms cubic-bezier(0.165, 0.840, 0.440, 1.000);
+
+// FONT WEIGHT
+$font-light: 300;
+$font-regular: 400;
+$font-medium: 500;
+$font-sm-bold: 600;
+$font-bold: 700;
+
+// Break Points
+$bp_large: 1440px;
+$bp_medium: 1280px;
+$bp_small: 1110px;
+$bp_min_hover: 1025px;
+$bp_extra_small: 805px;
+$bp_mobile: 480px;
+$bp_extra_mobile: 320px;
+
+// MIXIN RESPONSIVE
+@mixin min($min) {
+  @media (min-width: $min) {
+    @content;
+  }
+}
+
+@mixin max($max) {
+  @media (max-width: $max) {
+    @content;
+  }
+}
+
+@mixin max-h($max) {
+  @media (max-height: $max) {
+    @content;
+  }
+}
