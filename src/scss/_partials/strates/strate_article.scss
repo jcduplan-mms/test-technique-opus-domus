@@ -8,6 +8,10 @@
   position: relative;
 
   .row {
+    @include max($bp_small) {
+      flex-direction: column-reverse;
+    }
+
     .image-article {
       position: -webkit-sticky;
       position: sticky;
@@ -15,6 +19,14 @@
       width: 580px;
       height: 100vh;
       margin-bottom: 130px;
+
+      @include max($bp_small) {
+        margin-bottom: 30px;
+        height: auto;
+        width: 100%;
+        position: relative;
+        top: auto;
+      }
 
       > img {
         width: 100%;
@@ -25,6 +37,10 @@
 
     .content-article {
       padding: 180px 0 130px 140px;
+
+      @include max($bp_small) {
+        padding: 30px 0;
+      }
 
       .on-title {
         text-transform: uppercase;
@@ -41,6 +57,12 @@
         margin-bottom: 60px;
         left: -4px;
 
+        @include max($bp_small) {
+          left: auto;
+          margin-bottom: 30px;
+          font-size: 30px;
+        }
+
         &.with_line {
           &:after {
             content: '';
@@ -50,6 +72,11 @@
             height: 2px;
             width: 100px;
             background-color: $black;
+
+            @include max($bp_small) {
+              left: 140px;
+              bottom: 20px;
+            }
           }
         }
       }
@@ -64,6 +91,11 @@
           font-family: $conqueror-text-regular;
           margin-top: 60px;
           margin-bottom: 50px;
+
+          @include max($bp_small) {
+            margin-top: 30px;
+            margin-bottom: 30px;
+          }
 
           &:first-child {
             margin-top: 0;
@@ -83,6 +115,11 @@
           margin-bottom: 30px;
           padding-left: 60px;
 
+          @include max($bp_small) {
+            padding-left: 0;
+            margin-bottom: 15px;
+          }
+
           &:last-child {
             margin-bottom: 0;
           }
@@ -96,6 +133,10 @@
         > ul {
           padding-left: 70px;
           margin-bottom: 30px;
+
+          @include max($bp_small) {
+            padding-left: 0;
+          }
 
           > li {
             position: relative;

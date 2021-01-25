@@ -4,4 +4,8 @@ header {
   position: relative;
   background-color: $black;
   height: 100px;
+
+  @include max($bp_small) {
+    height: 50px;
+  }
 }

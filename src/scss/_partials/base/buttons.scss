@@ -22,8 +22,10 @@ a, button, input {
       color: $white;
     }
 
-    @include max($bp_extra_small) {
+    @include max($bp_small) {
       width: 100%;
+      justify-content: flex-start;
+      margin-left: 0 !important;
     }
 
     &.cta-full {
